@@ -1,0 +1,146 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.app-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  font-family: Arial, sans-serif;
+}
+
+h1 {
+  margin-bottom: 20px;
+}
+
+.restart-button {
+  margin-bottom: 20px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: #fff;
+  cursor: pointer;
+}
+
+.restart-button:hover {
+  background-color: #0056b3;
+}
+
+.difficulty-button {
+  margin-right: 20px;
+  margin-bottom: 20px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: #fff;
+  cursor: pointer;
+}
+
+.difficulty-button:hover {
+  background-color: #0056b3;
+}
+
+.game-board {
+  margin-bottom: 20px;
+  width: 50%;
+  height: 50%;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  height: 100%;
+}
+
+
+td {
+  min-width: 75px; /* 최소 가로 길이 설정 */
+  width: 75px; /* 가로 길이 설정 */
+  min-height: 75px; /* 최소 세로 길이 설정 */
+  height: 75px; /* 세로 길이 설정 */
+  border: 1px solid #ccc;
+  text-align: center;
+  vertical-align: middle;
+  font-size: 24px;
+  padding: 5px; /* 칸 간의 간격 조정 */
+}
+
+.correct {
+  background-color: lightgreen;
+}
+
+.input-container {
+  margin-bottom: 20px;
+}
+
+input[type="text"] {
+  padding: 10px;
+  margin-right: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  outline: none;
+}
+
+button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: #fff;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.message {
+  margin-top: 10px;
+  font-size: 18px;
+  color: green;
+}
+
+.fixed-bottom-left {
+  position: fixed;
+  bottom: 10px;
+  left: 10px;
+}
